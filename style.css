@@ -1,0 +1,15 @@
+* {
+margin: 0px;
+padding: 0px;
+font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.container {
+    margin-top: 20px;
+}
