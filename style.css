@@ -13,3 +13,55 @@ font-family: 'Roboto', sans-serif;
 .container {
     margin-top: 20px;
 }
+#show-city{
+    font-weight: bold;
+}
+
+#show-city, #temperature, #humidity, #windspeed {
+    margin-bottom: -30px;
+}
+
+.search {
+    padding-top: -10px;
+    font-weight: bold;
+}
+
+.header-forecast {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.future {
+    min-height: 200px;
+    min-width: 100px;
+}
+
+#uv-index {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.green {
+    background-color: green;
+}
+
+.yellow{ 
+    background-color: yellow;
+}
+
+.orange{ 
+    background-color: orange;
+}
+
+.red{ 
+    background-color: red;
+}
+
+.hide {
+    display: none;
+}
+
+#forecast-date1, #forecast-date2, #forecast-date3, #forecast-date4, #forecast-date5{
+    font-weight: 900;
+}

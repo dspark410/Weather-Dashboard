@@ -8,19 +8,17 @@
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
       
         <h1 class="header bg-dark">Weather Dashboard</h1>
-       
-
         <div class="container">
             <div class="row">
-              <div class="jumbotron col-lg-3">
-                    <p>Search For A City:</p>
+              <div class="jumbotron pt-3 pb-3 col-lg-3">
+                    <p class="search">Search For A City:</p>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" id="city" placeholder="search for a city..">
                         <div class="input-group-append">
@@ -29,22 +27,24 @@
                     </div>
 
                     <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        
+                        <li class="list-group-item p-4"></li>
+                        <li class="list-group-item p-4"></li>
+                        <li class="list-group-item p-4"></li>
+                        <li class="list-group-item p-4"></li>
+                        <li class="list-group-item p-4"></li>
+                        <li class="list-group-item p-4"></li>
+                        <li class="list-group-item p-4"></li>
+                        <li class="list-group-item p-4"></li>           
                     </ul>
+
               </div>
 
               <div class="col-lg-9">
                     <div class="card">
                         <div class="card-body">
-                            <div id="show-city">City</div>                  
+                            <h2>
+                                <div id="show-city">City </div>
+                            </h2>                    
                         </div>
                         <div class="card-body">
                             <div id="temperature">Temperature:</div>
@@ -56,41 +56,59 @@
                             <div id="windspeed">Windspeed:</div>
                         </div>
                         <div class="card-body">
-                            <div id="uv-index">UV Index:</div>
+                            <div>UV Index: <span id=uv-index> </span></div>
                         </div>
                     </div>
-                        <h2>5-Day Forecast:</h2>   
-                    <div class="row">
-                        <div class="card text-white bg-primary mb-3" style="max-width: 10rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Primary card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    <h2 class="header-forecast">5-Day Forecast:</h2>
+
+                    <div class="row hide">
+
+                        <div class="card text-white bg-primary mb-5 ml-2 font-weight-bold" style="max-width: 10rem;">
+                            <div class="card-body future">
+                              <div id="forecast-date1" class="h5"></div>
+                              <div id="forecast-icon1" class="mb-2"></div>
+                              <div id="forecast-temp1" class="mb-4"></div>
+                              <div id="forecast-humidity1"></div>
                             </div>
                         </div>
-                        <div class="card text-white bg-primary mb-3" style="max-width: 10rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Primary card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        <div class="card text-white bg-primary mb-5 ml-2 font-weight-bold" style="max-width: 10rem;">
+                            <div class="card-body future">
+                                <div id="forecast-date2" class="h5"></div>
+                                <div id="forecast-icon2" class="mb-2"></div>
+                                <div id="forecast-temp2" class="mb-4"></div>
+                                <div id="forecast-humidity2"></div>
                             </div>
                         </div>
-                        <div class="card text-white bg-primary mb-3" style="max-width: 10rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Primary card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        <div class="card text-white bg-primary mb-5 ml-2 font-weight-bold" style="max-width: 10rem;">
+                            <div class="card-body future">
+                                <div id="forecast-date3" class="h5"></div>
+                                <div id="forecast-icon3" class="mb-2"></div>
+                                <div id="forecast-temp3" class="mb-4"></div>
+                                <div id="forecast-humidity3"></div>
+                            </div> 
+                        </div>
+
+                        <div class="card text-white bg-primary mb-5 ml-2 font-weight-bold" style="max-width: 10rem;">
+                            <div class="card-body future">
+                                <div id="forecast-date4" class="h5"></div>
+                                <div id="forecast-icon4" class="mb-2"></div>
+                                <div id="forecast-temp4" class="mb-4"></div>
+                                <div id="forecast-humidity4"></div>
                             </div>
                         </div>
-                        <div class="card text-white bg-primary mb-3" style="max-width: 10rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Primary card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        <div class="card text-white bg-primary mb-5 ml-2 font-weight-bold" style="max-width: 10rem;">
+                            <div class="card-body future">
+                                <div id="forecast-date5" class="h5"></div>
+                                <div id="forecast-icon5" class="mb-2"></div>
+                                <div id="forecast-temp5" class="mb-4"></div>
+                                <div id="forecast-humidity5"></div>
                             </div>
                         </div>
-                        <div class="card text-white bg-primary mb-3" style="max-width: 10rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Primary card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
+
                     </div>
               </div>
             </div>
@@ -99,5 +117,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
+        
+        
     </body>
 </html>
