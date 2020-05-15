@@ -13,6 +13,7 @@ font-family: 'Roboto', sans-serif;
 .container {
     margin-top: 20px;
 }
+
 #show-city{
     font-weight: bold;
 }
@@ -42,6 +43,7 @@ font-family: 'Roboto', sans-serif;
     padding: 5px;
     border-radius: 5px;
 }
+
 .green {
     background-color: green;
 }
@@ -65,3 +67,4 @@ font-family: 'Roboto', sans-serif;
 #forecast-date1, #forecast-date2, #forecast-date3, #forecast-date4, #forecast-date5{
     font-weight: 900;
 }
+
