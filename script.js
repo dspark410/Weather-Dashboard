@@ -52,7 +52,7 @@ $(document).ready(function () {
         var showDate = date.html(" &#40;" + moment().format("L") + "&#41;")
         $("#show-city").append(showDate)
         var iconCode = response.weather[0].icon
-        var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png"
+        var iconURL = "https://openweathermap.org/img/w/" + iconCode + ".png"
         var img = $("<img>")
         var showImg = img.attr("src", iconURL)
         $("#show-city").append(showImg)
@@ -64,7 +64,7 @@ $(document).ready(function () {
         var longitude = response.coord.lon
         var latitude = response.coord.lat
 
-        var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=" + APIKey;
+        var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=" + APIKey;
 
         $.ajax({
           url: queryURL2,
@@ -94,7 +94,7 @@ $(document).ready(function () {
 
           })
 
-        var queryURL3 = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + APIKey;
+        var queryURL3 = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + APIKey;
 
         $.ajax({
           url: queryURL3,
@@ -111,7 +111,7 @@ $(document).ready(function () {
               $("#forecast-date" + counter).html(showFutureDate)
 
               var iconCode = response.list[i].weather[0].icon
-              var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png"
+              var iconURL = "https://openweathermap.org/img/w/" + iconCode + ".png"
               var img = $("<img>")
               var showImg = img.attr("src", iconURL)
               $("#forecast-date" + counter).append(showImg)
